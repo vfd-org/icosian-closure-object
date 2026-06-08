@@ -14,13 +14,16 @@ sits relative to it.
 
 ## The one-sentence claim
 
-> The icosian closure object realizes the Dedekind-type $L$-function
-> $\zeta_K(s)\,\zeta_K(s-1)$ **exactly** (every Euler factor verified from the lattice;
-> $C_2=1$); the Riemann $\zeta$ appears as **one factor among four** but is **not
-> isolated** (a mechanically certified negative); and the Weil positivity witness for
-> the object's *cuspidal* face is built parameter-free from its geometry, with the
-> remaining gap localized to a single named inequality — **GRH for one cuspidal
-> $L$-function, not classical RH.**
+> The icosian closure object's $L$-function is the Dedekind-type product
+> $\zeta_K(s)\,\zeta_K(s-1)$ ($C_2=1$, no local-2 correction) — **identified by the
+> classical Siegel–Weil / maximal-order framework and checked by complete short-vector
+> enumeration** (the theorem carries the identity; computation verifies the
+> implementation). The Riemann $\zeta$ appears as **one factor among four** but is **not
+> isolated** (a mechanically certified negative, on structural grounds). And the object's
+> *cuspidal* face supplies the **parameter-free prime side** of a Weil witness (the
+> archimedean side is the standard automorphic completion), with the remaining gap
+> localized to a single named inequality — **GRH for one cuspidal $L$-function, not
+> classical RH.**
 
 ## What is *not* claimed
 

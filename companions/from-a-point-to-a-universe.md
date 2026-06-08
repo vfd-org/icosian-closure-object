@@ -10,7 +10,7 @@
 > is load-bearing for any mathematical result in this bundle. It establishes
 > *coherence of shape* across known objects — that they rhyme — and nothing more.
 > Where it is suggestive it is **interpretation**, marked as such. The honest math
-> lives in the companion papers (`writeup/`); this is the intuition that sits beside
+> lives in the companion papers (`papers/`); this is the intuition that sits beside
 > them, not under them.
 
 ---
@@ -40,7 +40,7 @@ different names:
 - in string theory, the **self-dual radius** $R=\sqrt{\alpha'}$ — the circle size at
   which "shrink it" and "grow it" give back the same physics;
 - in arithmetic, the limit $q\to 1$, the much-discussed "field with one element"
-  $\mathbb{F}_1$ (a *name*, not yet a built object — see Paper III).
+  $\mathbb{F}_1$ (a *name*, not yet a built object — see the-positivity-wall).
 
 One point, many names, all meaning *the place the mirror fixes*. A universe that
 begins from a point is, in this picture, a universe that begins from **the balance
@@ -235,7 +235,7 @@ arithmetic.
 - it does **not** derive the physics from the geometry, or the geometry from the
   physics;
 - it does **not** build the missing object (the one that would make the cavity's
-  resonances provably the zeros — see the joint void in Paper III);
+  resonances provably the zeros — see the joint void in the-positivity-wall);
 - it makes **no** claim about the Riemann Hypothesis, and **no** claim that any
   cosmology explains it or is explained by it.
 
@@ -290,6 +290,6 @@ second is the open problem, stated as compactly as it can honestly be stated.
 
 ---
 
-*Companion to the `writeup/` papers (the load-bearing mathematics) and the
-`vfd_math_engine/` certificates (which separate, mechanically, the rhyme from the
+*Companion to the `papers/` set (the load-bearing mathematics) and the
+`engine/` certificates (which separate, mechanically, the rhyme from the
 proof). This file is interpretation only.*

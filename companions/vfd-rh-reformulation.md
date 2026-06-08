@@ -9,7 +9,7 @@
 > caveats are welded in below: the central equivalence *is already a theorem* (so
 > restating it is correct, not progress), and the positivity step *is* RH (the wall).
 > No claim is made that RH is proved, and no cosmological claim is made or implied.
-> The load-bearing mathematics of this bundle is in `writeup/`; this note is a
+> The load-bearing mathematics of this bundle is in `papers/`; this note is a
 > programme-level proposal that sits beside it.
 
 ---
@@ -105,7 +105,7 @@ The middle row is the only place new mathematics could enter: a geometric constr
 of $A$ from the scale–phase object. Even granting it, the bottom row remains the
 positivity wall — defining $A$ so that $A\ge0$ holds *by fiat* is the **circular** move
 the programme's own verification gate rejects (cf. the $\mathbb{F}_1$ ledger in
-`writeup/paper-III`). So this note specifies the target; it does not cross it.
+`papers/the-positivity-wall`). So this note specifies the target; it does not cross it.
 
 ---
 
@@ -151,5 +151,5 @@ is the mark of an honest proposal rather than a circular one.
 ---
 
 *Programmatic companion to `from-a-point-to-a-universe.md` (the intuition) and the
-`writeup/` papers (the verified mathematics and the $(O2)$ negative). Conjectural and
-falsifiable; not a proof; no cosmological claim.*
+`papers/` set (the verified mathematics and the certified $\zeta$-negative). Conjectural
+and falsifiable; not a proof; no cosmological claim.*

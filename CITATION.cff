@@ -9,7 +9,8 @@ version: "0.1.0-review"
 date-released: "2026-06-08"
 abstract: >
   Geometry-first study of the maximal icosian order on the 600-cell over Q(sqrt5):
-  the exact L-function identity L(Theta_I,s)=zeta_K(s)zeta_K(s-1) (C_2=1), a certified
-  negative (zeta is one factor, not isolated), and a parameter-free Weil positivity
-  witness on the cuspidal face with the gap localized to GRH for one cuspidal
-  L-function. No claim about the Riemann Hypothesis.
+  the L-function identity L(Theta_I,s)=zeta_K(s)zeta_K(s-1) (C_2=1, no local-2
+  correction), a certified negative (zeta is one factor, not isolated), and the
+  parameter-free prime side of a Weil witness on the cuspidal face with the gap
+  localized to GRH for one cuspidal L-function (not classical RH). No claim about the
+  Riemann Hypothesis.
