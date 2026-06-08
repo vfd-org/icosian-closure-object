@@ -1,5 +1,15 @@
 # Claim ledger
 
+**Bottom line (read this first):**
+
+> **This bundle does not prove RH, GRH, or any zero-location theorem.**
+>
+> **It constructs and documents a concrete icosian object, identifies its arithmetic
+> shadow, rejects the strong $\zeta$-identity, and derives the *prime side* of a Weil
+> witness for a related cuspidal $L$-function.**
+>
+> **The remaining wall is universal positivity.**
+
 One page, read first. Exactly what is proved, computed, interpreted, and **not**
 claimed across this bundle. Every paper is consistent with this ledger; if any sentence
 in a paper reads stronger than a line here, the line here governs.
