@@ -36,13 +36,14 @@ RH. The physics (§ companions) is interpretation, walled off from the mathemati
 |---|---|---|
 | 1 | `papers/the-closure-object.pdf` | **the headline result** — the object, its exact $L$-function, the certified $\zeta$-boundary |
 | 2 | `papers/witness-from-triad.pdf` | **the localization** — the Weil witness built from the object's cuspidal face; the gap pinned to GRH for one cuspidal $L$ |
-| 3 | `papers/note-shared-object.pdf` | the cosmology↔RH firewall note (one object, two roles, no cross-claim) |
-| — | `companions/the-positivity-wall.pdf` | expository background: where this object sits in the RH landscape (one positivity, many faces; the $\mathbb{F}_1$ ledger; the joint void) |
+| 3 | `papers/the-positivity-wall.pdf` | the RH landscape *around* this object: one positivity, many faces; the $\mathbb{F}_1$ ledger; the joint void; and where the object lands on that map (reaches the floor, stops at the wall) |
+| 4 | `papers/note-shared-object.pdf` | the cosmology↔RH firewall note (one object, two roles, no cross-claim) |
 | — | `companions/from-a-point-to-a-universe.md` | intuition: the scale–phase / Riemann-sphere picture *(interpretation only)* |
 | — | `companions/vfd-rh-reformulation.md` | the falsifiable $\mathcal{V}_1$ / witness-operator reformulation *(conjectural + a test)* |
 
-The two core results are **1** and **2**; everything else is clearly-secondary
-background, context, and interpretation.
+Results **1** and **2** are the verified core; **3** is the aligned expository landscape
+that places them in context; **4** is the firewall. The two `.md` companions are
+interpretation, walled off.
 
 ---
 
@@ -78,9 +79,9 @@ expected results.
 ## What lives where
 
 ```
-papers/        the three core/firewall papers (.tex + compiled .pdf)
-companions/    expository background + interpretation (the-positivity-wall.tex/.pdf
-               and two .md essays; walled off, not load-bearing)
+papers/        the four papers (.tex + compiled .pdf): two core results, the aligned
+               RH-landscape paper, and the firewall note
+companions/    interpretation only — the two .md essays (walled off, not load-bearing)
 engine/        the verification gate, certificate atlas, F_1 ledger, joint-void
 repro/src/     self-contained reproducibility scripts (icosian order + Weil witness)
 repro/data/    geometric Brandt eigenvalue cache + Weil-wall output
