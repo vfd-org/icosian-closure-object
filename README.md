@@ -25,24 +25,30 @@ sits relative to it.
 ## What is *not* claimed
 
 No statement about the location of the zeros of $\zeta$ (RH); no proof of any GRH; no
-operator/positivity proof; no connection between any physical or cosmological model and
-RH. The physics (§ companions) is interpretation, walled off from the mathematics.
+operator/positivity proof; no isolation of $\zeta$ by the object; no connection between
+any physical or cosmological model and RH. **See `CLAIMS.md` for the full ledger** of
+proved / computed / interpretive / not-claimed — read it first.
 
 ---
 
 ## Reading order
 
+Lead with the boundary map, then the object, then the witness — so the reader sees
+*"they know exactly where the wall is"* rather than *"they are trying to make this sound
+like RH."*
+
 | # | file | what it is |
 |---|---|---|
-| 1 | `papers/the-closure-object.pdf` | **the headline result** — the object, its exact $L$-function, the certified $\zeta$-boundary |
-| 2 | `papers/witness-from-triad.pdf` | **the localization** — the Weil witness built from the object's cuspidal face; the gap pinned to GRH for one cuspidal $L$ |
-| 3 | `papers/the-positivity-wall.pdf` | the RH landscape *around* this object: one positivity, many faces; the $\mathbb{F}_1$ ledger; the joint void; and where the object lands on that map (reaches the floor, stops at the wall) |
-| 4 | `papers/note-shared-object.pdf` | the cosmology↔RH firewall note (one object, two roles, no cross-claim) |
+| 1 | `papers/the-positivity-wall.pdf` | **the landscape** — RH is one positivity, many faces; where the wall is; the $\mathbb{F}_1$ ledger; and where this object lands on the map |
+| 2 | `papers/the-closure-object.pdf` | **the object** — the icosian object, its exact $L$-function $\zeta_K(s)\zeta_K(s-1)$, and the certified negative: it does *not* isolate $\zeta$ |
+| 3 | `papers/witness-from-triad.pdf` | **the localization** — the parameter-free *prime side* of a Weil witness on the cuspidal face; the gap pinned to GRH for one cuspidal $L$ (not classical RH) |
+| 4 | `papers/note-shared-object.pdf` | the cosmology↔RH firewall (one object, multiple roles, *no proven cross-role implication*) |
+| 5 | *(external)* `icosian-triad-v600` (v1.1) | the detailed technical backbone — the triad $(\mathcal{I},C_\varphi,N_H,\sigma)$ and the exact identity; this bundle's results recall it |
 | — | `companions/from-a-point-to-a-universe.md` | intuition: the scale–phase / Riemann-sphere picture *(interpretation only)* |
 | — | `companions/vfd-rh-reformulation.md` | the falsifiable $\mathcal{V}_1$ / witness-operator reformulation *(conjectural + a test)* |
 
-Results **1** and **2** are the verified core; **3** is the aligned expository landscape
-that places them in context; **4** is the firewall. The two `.md` companions are
+**1** is the honest map; **2** and **3** are the verified object and its witness; **4**
+is the firewall; **5** is the external technical source. The two `.md` companions are
 interpretation, walled off.
 
 ---

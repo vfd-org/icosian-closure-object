@@ -16,12 +16,24 @@
 \newcommand{\Icos}{\mathcal{I}}
 \newcommand{\fq}{\mathfrak{q}}
 
-\title{The Weil Witness from the Icosian Triad:\\ the Gap, Localized}
+\title{The Prime Side of a Weil Witness from the Icosian Triad:\\ the Gap, Localized}
 \author{(VFD programme --- working draft)}
 \date{2026}
 
 \begin{document}
 \maketitle
+
+\begin{center}
+\fbox{\parbox{0.93\linewidth}{\small\textbf{Read first.} The witness here is \textbf{not}
+a witness for the classical Riemann zeta function. It is a Weil witness for a
+\emph{specific cuspidal level-$31$ $L$-function} attached to the object's Brandt face;
+classical $\zeta$ sits in a separate (Eisenstein) face. Its universal positivity
+quantifier is therefore \textbf{GRH for that cuspidal $L$-function, not classical RH},
+and its relevance to RH is \textbf{structural, not a reduction}. We supply the
+parameter-free \emph{prime side}; the archimedean side is the standard completion of the
+cuspidal $L$-function. No claim about RH is made.}}
+\end{center}
+\medskip
 
 \begin{abstract}
 The companion papers establish the icosian object exactly: the maximal icosian order
@@ -133,9 +145,18 @@ closable without the (out-of-reach) operator/positivity proof.
 \begin{remark}[the tests are archimedean-dominated]
 Against our own result: in the tested family the prime residual is tiny relative to the
 archimedean term (ratio $\sim10^{-4}$ down to $10^{-16}$ as $\sigma_h$ grows), and the
-prime term is truncated to the cached range $N(\fq)\le150$ with no tail bound. Hence
-$W(h)\ge0$ here is \emph{consistent with} GRH for this $L$-function but is \emph{not a
-sharp test} of the positivity quantifier; we supply no sharp test family.
+prime term is truncated to the cached range $N(\fq)\le150$ with no tail bound.
+\textbf{The numerical tests validate normalization and implementation; they are not
+evidence for the universal positivity quantifier.} $W(h)\ge0$ here is consistent with
+GRH for this $L$-function but is not a sharp test of it; we supply no sharp test family.
+\end{remark}
+
+\begin{remark}[what a sharp test would require---future work]\label{rem:future}
+A genuine test of the quantifier needs: (i) \emph{adversarial} positive-type test
+functions $h$ for which $\mathrm{PRIME}(h)$ is comparable to $\mathrm{ARCH}(h)$ (so the
+prime side can actually threaten positivity), and (ii) a certified \emph{tail bound} on
+the truncated prime residual beyond $N(\fq)\le150$. Neither is supplied here; both are
+the next required steps before any positivity statement carries weight.
 \end{remark}
 
 \section{Conclusion}

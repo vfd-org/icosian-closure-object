@@ -32,8 +32,10 @@ We study a single geometric object---the icosian closure structure on the $600$-
 and ask what arithmetic it carries. The object is rigorous geometry: the $120$ unit
 icosians, the maximal order $\Icos$ they generate over $K=\Q(\sqrt5)$, and its $E_8$
 lattice. Its \emph{arithmetic shadow} is the $L$-function of its theta series, which
-(by prior work of the programme) equals $\zetaK(s)\zetaK(s-1)$ \emph{exactly}, verified
-by complete short-vector enumeration in the maximal icosian order. We then map the \emph{boundary} of this shadow: using a reproducible
+(by prior work of the programme) is identified as $\zetaK(s)\zetaK(s-1)$ by the classical
+Siegel--Weil / maximal-order Eisenstein framework and checked by complete short-vector
+enumeration of the local representation data. (The theorem carries the identity; the
+computation verifies the implementation, not an infinite Euler product by itself.) We then map the \emph{boundary} of this shadow: using a reproducible
 verification gate, we certify that the object's $L$-function contains the Riemann
 $\zeta$ (the unshifted factor $\zeta(s)$) only as one factor among four, and that the
 proposed strong correspondence ``object $\leftrightarrow\zeta$'' is rejected. Finally we record, as clearly-marked
@@ -149,23 +151,28 @@ range. This too is a recorded consistency check, not a geometric derivation here
 \end{numcheck}
 
 \section{The boundary}\label{sec:boundary}
-The object's $L$-function (Proposition~\ref{prop:icosian}) has degree $4$ and, by
-\eqref{eq:dedekind}, equals $\zeta(s)L(s,\chi_5)\zeta(s-1)L(s-1,\chi_5)$ up to the
-local-$2$ factor. So the unshifted $\zeta(s)$ appears in it---\emph{as one factor among
-four} (the shifted $\zeta(s-1)$ is also present but is irrelevant to the critical-line
-count, by Proposition~\ref{prop:online}). A natural question is whether the object
-isolates $\zeta$ itself. It does not, and we certify this mechanically.
+The achievement of this section is \emph{not} that the object contains $\zeta$---many
+constructions do, and that alone is not special. It is the pair: the object carries a
+precise Dedekind/Eisenstein arithmetic shadow, \emph{and} the stronger
+``object $=\zeta$'' identity provably fails. The object's $L$-function
+(Proposition~\ref{prop:icosian}) has degree $4$ and, by \eqref{eq:dedekind}, equals
+$\zeta(s)L(s,\chi_5)\zeta(s-1)L(s-1,\chi_5)$ up to the local-$2$ factor; the unshifted
+$\zeta(s)$ is one factor among four (the shifted $\zeta(s-1)$ is also present but is
+irrelevant to the critical-line count, by Proposition~\ref{prop:online}). Whether the
+object \emph{isolates} $\zeta$ is the real question; it does not, and we certify this.
 
 \paragraph{The gate.} A proposed correspondence supplies a parameter-free procedure
 producing the on-line zeros of a claimed $L$-function \emph{without taking the target as
-input}. The gate checks \textbf{no-hardcoding} and \textbf{provenance} (declared-procedure
-checks: it catches a \emph{declared} fitted/tuned map, relying on honest declaration,
-not program analysis), \textbf{fingerprint} (nearest-neighbour spacing: fraction of
+input}. The gate checks \textbf{fingerprint} (nearest-neighbour spacing: fraction of
 normalized gaps below $0.3$), \textbf{pointwise} (first eight zeros, tolerance $0.2$),
 \textbf{density} (on-line zeros per unit height), \textbf{rigidity} (number variance),
-and structural \textbf{degree}/\textbf{pole}. A hashed certificate is emitted either way;
-the engine is a certifier, not a search. The geometry$\to$arithmetic enumeration itself
-is the separate computation of \cite{IcosianTriad}, not re-performed by the gate.
+structural \textbf{degree}/\textbf{pole}, and---auxiliary only---\textbf{no-hardcoding}
+/ \textbf{provenance} (declared-procedure checks that catch a \emph{declared} fitted map,
+relying on honest declaration, not program analysis). \textbf{The decisive rejections
+below are structural} (degree, density, pointwise); provenance is a guardrail, not the
+proof. A hashed certificate is emitted either way; the engine is a certifier, not a
+search. The geometry$\to$arithmetic enumeration itself is the separate computation of
+\cite{IcosianTriad}, not re-performed by the gate.
 
 \begin{result}[the $\zeta$-boundary]\label{res:o2}
 The strong candidate ``object $\leftrightarrow\zeta$'' is \textbf{rejected}. Against
