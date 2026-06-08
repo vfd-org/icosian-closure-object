@@ -42,7 +42,7 @@ in a paper reads stronger than a line here, the line here governs.
   including the inert prime 2 ($r(2)=600$, no anomaly) — complete short-vector
   enumeration.
 - **Gate rejection of the strong "object $\leftrightarrow\zeta$" correspondence** — the
-  decisive grounds are *structural*: degree ($4\ne1$), on-line density (too dense), and
+  decisive grounds are *structural*: degree ($4\ne1$), critical-line density (too dense), and
   pointwise mismatch. (A provenance/no-hardcoding check is an auxiliary guardrail only.)
 - Brandt/Hecke eigenvalues of the cuspidal face (level $\mathfrak p_{31}$),
   parameter-free, out-of-sample checked against point counts.

@@ -100,8 +100,11 @@ totally real fields \cite[Table 8.2]{KirschmerVoight} (see also Vign\'eras
 
 \section{The arithmetic shadow}\label{sec:shadow}
 The arithmetic carried by the object is the $L$-function of its theta series. It is
-\emph{exactly} the rank-two product $\zetaK(s)\zetaK(s-1)$, verified in
-\cite{IcosianTriad} by complete short-vector enumeration in the maximal icosian order.
+\emph{exactly} the rank-two product $\zetaK(s)\zetaK(s-1)$ --- an identity carried by the
+classical Siegel--Weil/maximal-order theorem (Proposition~\ref{prop:icosian}) and checked
+by complete short-vector enumeration in the maximal icosian order in \cite{IcosianTriad}
+(the theorem supplies the identity; the computation verifies the implementation, not an
+infinite Euler product by itself).
 
 \begin{proposition}[recalled from \cite{IcosianTriad}]\label{prop:icosian}
 Let $\Theta_{\Icos}$ be the Hilbert theta series over $K$ of the norm form on the
@@ -130,7 +133,7 @@ The two Galois components of the object are tested against the two factors of
 \eqref{eq:dedekind}:
 \begin{numcheck}\label{res:24cell}
 The rational $24$-cell sub-object (Hurwitz, over $\Q$) is the $K=\Q$ analogue: its theta
-series has on-line zeros matching those of $\zeta(s)\zeta(s-1)$ (tested to finite
+series has critical-line zeros matching those of $\zeta(s)\zeta(s-1)$ (tested to finite
 precision; the same Siegel--Weil mechanism applies, the order being class-number one
 over $\Q$). This is a recorded consistency check, not a theorem-grade derivation here.
 \end{numcheck}
@@ -145,7 +148,7 @@ $\mathrm{Re}(s)=\tfrac12$. The statement concerns \emph{which} zeros lie on the 
 asserts nothing about whether all nontrivial zeros of $\zeta$ do.
 \end{proof}
 \begin{numcheck}\label{res:twin}
-The $96$-vertex $\varphi$-shell (Galois-sign component) has tested on-line zeros matching
+The $96$-vertex $\varphi$-shell (Galois-sign component) has tested critical-line zeros matching
 those of $L(s,\chi_5)$, with no observed coincidence with a Riemann zero in the tested
 range. This too is a recorded consistency check, not a geometric derivation here.
 \end{numcheck}
@@ -154,7 +157,8 @@ range. This too is a recorded consistency check, not a geometric derivation here
 The achievement of this section is \emph{not} that the object contains $\zeta$---many
 constructions do, and that alone is not special. It is the pair: the object carries a
 precise Dedekind/Eisenstein arithmetic shadow, \emph{and} the stronger
-``object $=\zeta$'' identity provably fails. The object's $L$-function
+``object $=\zeta$'' identity provably fails \emph{as an identity of $L$-functions}. The
+object's $L$-function
 (Proposition~\ref{prop:icosian}) has degree $4$ and, by \eqref{eq:dedekind}, equals
 $\zeta(s)L(s,\chi_5)\zeta(s-1)L(s-1,\chi_5)$, with no local-$2$ correction; the unshifted
 $\zeta(s)$ is one factor among four (the shifted $\zeta(s-1)$ is also present but is
@@ -162,21 +166,21 @@ irrelevant to the critical-line count, by Proposition~\ref{prop:online}). Whethe
 object \emph{isolates} $\zeta$ is the real question; it does not, and we certify this.
 
 \paragraph{The gate.} A proposed correspondence supplies a parameter-free procedure
-producing the on-line zeros of a claimed $L$-function \emph{without taking the target as
+producing the critical-line zeros of a claimed $L$-function \emph{without taking the target as
 input}. The gate checks \textbf{fingerprint} (nearest-neighbour spacing: fraction of
 normalized gaps below $0.3$), \textbf{pointwise} (first eight zeros, tolerance $0.2$),
-\textbf{density} (on-line zeros per unit height), \textbf{rigidity} (number variance),
+\textbf{density} (critical-line zeros per unit height), \textbf{rigidity} (number variance),
 structural \textbf{degree}/\textbf{pole}, and---auxiliary only---\textbf{no-hardcoding}
 / \textbf{provenance} (declared-procedure checks that catch a \emph{declared} fitted map,
 relying on honest declaration, not program analysis). \textbf{The decisive rejections
 below are structural} (degree, density, pointwise); provenance is a guardrail, not the
-proof. A hashed certificate is emitted either way; the engine is a certifier, not a
+proof. A hashed certificate is emitted either way; the engine is a verification certifier, not a
 search. The geometry$\to$arithmetic enumeration itself is the separate computation of
 \cite{IcosianTriad}, not re-performed by the gate.
 
 \begin{result}[the $\zeta$-boundary]\label{res:o2}
 The strong candidate ``object $\leftrightarrow\zeta$'' is \textbf{rejected}. Against
-$\zeta$ (degree $1$) the object's degree-$4$ on-line content fails: \emph{degree}
+$\zeta$ (degree $1$) the object's degree-$4$ critical-line content fails: \emph{degree}
 ($4$ vs $1$); \emph{fingerprint} ($0.077$ for the superposition vs $0.000$ for a single
 $\zeta$-type spectrum); \emph{pointwise} (maximum displacement over the first eight
 zeros $\approx 22.3$; first-zero displacement $\approx 7.5$); and \emph{density}
@@ -184,20 +188,21 @@ zeros $\approx 22.3$; first-zero displacement $\approx 7.5$); and \emph{density}
 \end{result}
 \begin{result}[counting route]\label{res:o2b}
 A route sharing only the density diagnostic with Result~\ref{res:o2}: in the computed
-on-line lists, the object's combined zero count exceeds $\zeta$'s---the count ratios are
+critical-line lists, the object's combined zero count exceeds $\zeta$'s---the count ratios are
 $\approx 4.7, 3.7, 3.1$ in the windows up to heights $30,40,50$. (A leading-order
 doubled density is the heuristic expectation for the two unshifted degree-one factors
 visible on this line; we
 do not certify the asymptotic, and present this as finite-window evidence, not a
-theorem.) A list denser than $\zeta$'s on these windows is not $\zeta$'s.
+theorem.) A list denser than $\zeta$'s on these windows is not $\zeta$'s list in these
+certified windows.
 \end{result}
 
 \paragraph{Controls.}
 \begin{result}[fitted-map control]\label{res:fit}
 A candidate whose provenance \emph{declares} a least-squares fit to the zeros is rejected
 on \textbf{provenance} alone, independent of fit quality---reproducing, mechanically, the
-fitted-map trap of a prior internal audit (the ``$W5$'' audit; see
-\texttt{CIRCLE\_TEST.md}).
+fitted-map trap of a prior internal audit (the ``$W5$'' provenance audit of the
+substrate$\to$prime map).
 \end{result}
 \begin{result}[class-vs-individual control]\label{res:gue}
 A single seeded, window-rescaled GUE operator (random Hermitian, no arithmetic; produced
@@ -214,9 +219,9 @@ not a theorem about generic GUE operators.
 \hline
 candidate & verdict & load-bearing rejection \\
 \hline
-$24$-cell $\to \zeta(s)\zeta(s-1)$ (on-line) & \textsc{consistent} & --- \\
+$24$-cell $\to \zeta(s)\zeta(s-1)$ (critical-line) & \textsc{consistent} & --- \\
 icosian $\to \zetaK(s)\zetaK(s-1)$ (exact) & \textsc{verified} & --- \\
-$\varphi$-shell $\to L(s,\chi_5)$ (on-line) & \textsc{consistent} & --- \\
+$\varphi$-shell $\to L(s,\chi_5)$ (critical-line) & \textsc{consistent} & --- \\
 object $\to \zeta$ (strong bridge) & \textsc{rejected} & degree, fingerprint, pointwise, density \\
 fitted map $\to \zeta$ & \textsc{rejected} & provenance \\
 seeded GUE $\to \zeta$ & \textsc{rejected} & pointwise (class $\ne$ individual) \\
@@ -264,7 +269,7 @@ $\zeta(s)$ enters only as one factor of the object's $L$-function, and the negat
 statement about a
 construction, not about the zeros of $\zeta$. The physical reading of
 \S\ref{sec:physics} is interpretation. The gate, certificates, and atlas accompany this
-paper in \texttt{vfd\_math\_engine/} (the seeded GUE control row is produced by
+paper in \texttt{engine/} (the seeded GUE control row is produced by
 \texttt{grow\_atlas.py}). No proof certificate is defined or issued.
 
 \begin{thebibliography}{9}

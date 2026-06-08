@@ -42,16 +42,17 @@ known mathematics.
 
 \section{RH as one positivity}
 By the Weil explicit-formula criterion \cite{Weil}, RH is equivalent to the
-nonnegativity of an explicit quadratic functional $W(f)\ge 0$ on a suitable space of
-test functions. Every route below is a re-expression of this one inequality.
+nonnegativity of an explicit quadratic functional $W_\zeta(f)\ge 0$ on a suitable space
+of test functions. The proven-equivalent routes below are re-expressions of this one
+inequality; the remaining entries are templates or analogues, not proven re-expressions.
 
 \section{One condition, many faces}
 The following are standard equivalent criteria and standard programme templates for
-RH. The first three are \emph{proven equivalent} to RH; the last two are programme
+RH. The first four are \emph{proven equivalent} to RH; the last two are programme
 templates (one open over $\Z$, one a theorem in the function-field model). A single
 off-line zero falsifies the proven-equivalent criteria simultaneously:
 \begin{itemize}\itemsep1pt
-  \item Weil positivity $W(f)\ge 0$ (spectral / Connes \cite{Connes}) --- equivalent
+  \item Weil positivity $W_\zeta(f)\ge 0$ (spectral / Connes \cite{Connes}) --- equivalent
         to RH;
   \item the Li coefficients $\lambda_n\ge 0$ (algebraic \cite{Li}) --- equivalent to
         RH;
@@ -72,7 +73,7 @@ many sides; the last two are the geometric/spectral templates one hopes to trans
 The Riemann zeros are modelled, with strong numerical and partial-theorem support, by
 the statistics of a chaotic, time-reversal-broken (GUE, $\beta=2$) spectrum: Montgomery
 \cite{Montgomery} proves the pair correlation in a restricted range (conditionally),
-and Odlyzko \cite{Odlyzko} confirms it numerically to high precision; full GUE
+and Odlyzko \cite{Odlyzko} gives high-precision numerical support; full GUE
 statistics remain conjectural. Summed as oscillations the zeros reproduce the primes
 with von-Mangoldt weights (the explicit formula, unconditional); and Rodgers--Tao give
 $\Lambda\ge 0$, so RH would force the de Bruijn--Newman constant to $\Lambda=0$ (not
@@ -84,7 +85,7 @@ solution; they do not supply the positivity.
 The function-field analogue of RH is a theorem precisely because the positivity is
 \emph{geometric}: for a curve $C/\F_q$, the bound on Frobenius eigenvalues follows
 from the Hodge-index theorem on the surface $C\times C$. Over $\Z$ the analogous
-object---a canonical Frobenius whose degree-form is $W(f)$, living on a putative
+object---a canonical Frobenius whose degree-form is $W_\zeta(f)$, living on a putative
 arithmetic surface $\operatorname{Spec}\Z\times_{\F_1}\operatorname{Spec}\Z$---is
 \emph{unbuilt}. The leading programme towards it---Connes' trace-formula /
 noncommutative-geometry approach and the related $\F_1$ / absolute-geometry
@@ -107,7 +108,7 @@ symbol & reading & status \\
 $\operatorname{Re}(s)=\tfrac12$ & critical line & defined; computable \\
 $|\alpha_i|=q^{1/2}$ & Frobenius eigenvalues on a circle & \emph{theorem} (function field) \\
 $\xi(s)=\xi(1-s)$ & the mirror / functional equation & defined; proven \\
-$W(f)\ge 0$ & Weil positivity & defined; \emph{unproven} ($=$ RH) \\
+$W_\zeta(f)\ge 0$ & Weil positivity & defined; \emph{unproven} ($=$ RH) \\
 $\operatorname{Frob}_q$ & geometric Frobenius & a real morphism \\
 $\operatorname{Spec}\Z\times_{\F_1}\operatorname{Spec}\Z$ & arithmetic surface & \textbf{no construction carrying} \\
  & & \textbf{the required positivity} \\
@@ -131,8 +132,8 @@ Because $\F_1$ is the placeholder, it is natural to ask whether one may simply
 \emph{define} it---``$\F_1 :=$ unity,'' say---and proceed. Many definitions exist; the
 question is never whether it can be \emph{named} but whether the named object
 \emph{carries} the explicit-formula positivity \emph{without assuming it}. We classify
-the principal published candidates by three documented criteria: \textsc{defined} (an
-agreed object exists), \textsc{carries} (building the surface over it yields $W(f)$ as a
+representative published routes, plus one control, by three documented criteria: \textsc{defined} (an
+agreed object exists), \textsc{carries} (building the surface over it yields $W_\zeta(f)$ as a
 genuine degree/intersection form), and \textsc{honest} (it does so without putting the
 conclusion in by hand). The verdicts below report the literature's status, not a
 computation: whether a given $\F_1$ proves RH \emph{is} the open problem.
@@ -145,7 +146,7 @@ candidate & verdict & where it stops \\
 $\F_1=\{*\}$, trivial monoid (``unity'') & \textsc{inert} & no nontrivial Frobenius \\
 $\F_1$-vector space $=$ pointed set \cite{Cohn} & \textsc{inert} & $q\to1$ kills the arithmetic \\
 Deitmar monoid schemes \cite{Deitmar} & \textsc{inert} & toric-like (finite-type) factors \\
-Borger $\Lambda$-rings \cite{Borger} & \textsc{open} & supplies Frobenius lifts, not $W(f)$ \\
+Borger $\Lambda$-rings \cite{Borger} & \textsc{open} & supplies Frobenius lifts, not $W_\zeta(f)$ \\
 Connes--Consani arithmetic site \cite{ConnesConsani} & \textsc{open} & trace recovered, positivity open \\
 Deninger dynamical cohomology \cite{Deninger} & \textsc{conjectural} & cohomology hypothetical \\
 ``$\F_1$ defined so $|\alpha|=q^{1/2}$'' (control) & \textsc{circular} & assumes the conclusion \\
@@ -172,7 +173,7 @@ landscape, and the entries here are a snapshot, not a verdict on the field.
 \emph{This section is an interpretive picture, not a theorem.} RH is approached from two
 sides that the Hilbert--P\'olya philosophy and Connes' programme \emph{hope} are one
 object seen twice: an \emph{arithmetic} side (a Frobenius on the $\F_1$-surface whose
-degree-form would be $W(f)\ge 0$) and a \emph{spectral} side (a self-adjoint $H=H^*$
+degree-form would be $W_\zeta(f)\ge 0$) and a \emph{spectral} side (a self-adjoint $H=H^*$
 whose spectrum would be the zeros---Hilbert--P\'olya, Berry--Keating \cite{BerryKeating}).
 Tabulating what each side reaches today (``reach'' = a partial construction exists;
 ``part.'' = modelled but not fully built; ``dark'' = no construction):
@@ -190,7 +191,7 @@ mirror $\xi(s)=\xi(1-s)$ & reach & reach & \\
 Frobenius / arithmetic surface & part. & \emph{dark} & geometry's half (unbuilt) \\
 self-adjoint $H$ on a positive space & \emph{dark} & part. & physics' half (no final $H$) \\
 \hline
-$W(f)\ge0$ \ /\ ($\operatorname{spec} H=$ zeros, $H=H^*$) & \emph{dark} & \emph{dark} & \textbf{the door} \\
+$W_\zeta(f)\ge0$ \ /\ ($\operatorname{spec} H=$ zeros, $H=H^*$) & \emph{dark} & \emph{dark} & \textbf{the door} \\
 \hline
 \end{tabular}
 \end{center}
@@ -200,7 +201,7 @@ that does not require RH (the shared floor; GUE only empirically). Second, the
 programme's \emph{hope} is that the arithmetic-dark and spectral-dark requirements are
 the same object missing its two faces. We emphasise the status carefully: Connes'
 analysis shows RH is equivalent to the positivity of a \emph{trace pairing}; it does
-\emph{not} prove that ``$W(f)\ge 0$'' and ``$H=H^*$'' are literally the same statement,
+\emph{not} prove that ``$W_\zeta(f)\ge 0$'' and ``$H=H^*$'' are literally the same statement,
 and \textbf{no theorem identifies the arithmetic and spectral constructions.} What can
 be said honestly is that \emph{both, under their own strong hypotheses, would yield RH},
 and the programme conjectures a single underlying object. If that conjecture held, the
@@ -216,18 +217,21 @@ lands exactly where the survey predicts---on the shared floor, stopping at the s
 
 \begin{itemize}\itemsep2pt
 \item \textbf{The closure object} (\texttt{the-closure-object}) realizes the Eisenstein
-$L$-function $\zetaK(s)\,\zetaK(s-1)$ \emph{exactly} (every Euler factor verified from
-the maximal icosian lattice); the Riemann $\zeta$ is one of its four factors but is
+$L$-function $\zetaK(s)\,\zetaK(s-1)$ \emph{exactly} (an identity carried by the classical
+Siegel--Weil/maximal-order theorem, with the local factors checked by complete short-vector
+enumeration); the Riemann $\zeta$ is one of its four factors but is
 \emph{not} isolated---a mechanically certified negative. This is a geometric route that
 \emph{reaches} a real arithmetic object containing $\zeta$ without reaching $\zeta$
 alone: it stages the arithmetic, it does not touch the location of the zeros.
 \item \textbf{The witness} (\texttt{witness-from-triad}) supplies, parameter-free from
-the object's cuspidal Brandt face, the \emph{prime side} of the Weil functional $W(h)$
-of \S2---the very inequality this survey is about. It is calibrated on $\zeta$ (where
-the zeros are known) and verified $W(h)\ge0$ on every finite Gaussian test tried; the
-residual gap is exactly
-the universal positivity quantifier of \S2, here \emph{GRH for one cuspidal
-$L$-function}, not classical RH.
+the object's cuspidal Brandt face, the \emph{prime side} of the \emph{analogous} Weil
+functional $W_L(h)$ for the cuspidal level-$31$ $L$-function---\emph{not} the classical
+$W_\zeta(f)$ of \S2. It is calibrated on $\zeta$ (where the zeros are known) and returns a
+nonnegative \emph{truncated} value $W_{L,\le150}(h)\ge0$ on every finite Gaussian test
+tried (the tests are archimedean-dominated and cut at $N(\mathfrak q)\le150$, so they
+validate implementation, not the quantifier); the residual gap is the universal positivity
+quantifier \emph{for that $L$}, i.e.\ \emph{GRH for one cuspidal $L$-function}, not
+classical RH.
 \end{itemize}
 
 \noindent So the programme's object is not an exception to the map. It reaches the floor
@@ -239,12 +243,13 @@ section, it supplies the arithmetic-side ingredients parameter-free while leavin
 one dark line untouched.
 
 \section{Closing}
-Every route \emph{surveyed here}---cavity, mirror, operator, loop, gas, flow,
-hyperbolicity, and the icosian closure object of this bundle---is a re-expression of one
-positivity, and
+Every route \emph{surveyed here}---the Weil, Li, de Bruijn--Newman, and Jensen criteria,
+the Hilbert--P\'olya and function-field templates, the $\F_1$ candidates, and the icosian
+closure object of this bundle---is a re-expression of one positivity, and
 re-expression does not prove it. The single missing step is the construction of an
-arithmetic surface and the positivity of its intersection form (equivalently, the
-universal positivity quantifier on a witness like the one this bundle builds). We make
+arithmetic surface and the positivity of its intersection form. (Analogously, in this
+bundle's cuspidal instance, the missing step is the universal positivity quantifier on
+the witness it builds---which is GRH for that one $L$-function, not classical RH.) We make
 no claim of progress on that step; we have only drawn the boundary cleanly, placed this
 programme's object on it, and marked, at each face, exactly where known mathematics ends.
 

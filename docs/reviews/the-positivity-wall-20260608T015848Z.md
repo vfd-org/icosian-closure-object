@@ -1,0 +1,43 @@
+Publication-ready: **No**. The paper does not claim a new RH result, but two passages blur the classical RH Weil functional with the bundle’s separate cuspidal GRH witness. That is a release-candidate blocker under the stated constraints.
+
+**1. Claim Audit**
+- “Every route below is a re-expression of this one inequality” [line 46](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:46>): too strong. Hilbert-Polya and the function-field surface are templates/analogues, not proven re-expressions of classical RH in the same sense.
+- “The first three are proven equivalent… the last two are programme templates” [lines 49-51](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:49>): internally wrong count. The Jensen-polynomial criterion is also stated as equivalent, so this should be “first four.”
+- Weil, Li, de Bruijn-Newman, Jensen claims [lines 54-61](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:54>): standard, correctly credited, no new proof claimed.
+- Hilbert-Polya and function-field positivity [lines 62-66](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:62>): correctly marked as programme/template, not a RH proof.
+- “Odlyzko confirms it numerically” [line 75](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:75>): too strong. Numerical work supports; it does not confirm.
+- Missing-object/Connes discussion [lines 84-95](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:84>): acceptable; it explicitly says trace-pairing positivity remains unproven.
+- F1 ledger [lines 129-169](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:129>): acceptable only as a scoped snapshot. “principal published candidates” should be softened to “representative published routes and one control.”
+- Joint-void section [lines 171-211](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:171>): correctly stamped conjectural; crucially says Connes does not identify \(W(f)\ge0\) with \(H=H^*\).
+- Witness placement [lines 224-230](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:224>): problematic. “the prime side of the Weil functional \(W(h)\) of §2—the very inequality this survey is about” conflates classical RH positivity with the cuspidal level-31 GRH witness. Fix to “the analogous Weil functional \(W_L(h)\) for the cuspidal level-31 \(L\)-function.”
+- Closing “equivalently” [lines 245-247](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:245>): overclaim. The missing arithmetic surface for classical RH is not equivalent to universal positivity for this bundle’s cuspidal witness. Say “analogously, in this bundle’s cuspidal instance…”
+
+**2. Internal Consistency**
+- Main conflict: \(W(f)\) for classical RH in §2 versus \(W(h)\) for the cuspidal level-31 \(L\)-function in §9. Use \(W_\zeta\) and \(W_L\), or state the change explicitly.
+- Enumeration error at [lines 49-51](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:49>): four equivalent criteria, not three.
+- Closing list “cavity, mirror, operator, loop, gas, flow…” [lines 242-243](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:242>) names routes not actually surveyed in the note. Remove or replace with the actual surveyed list.
+- Static ref check: labels used in `\ref` exist. No `\eqref` in target. I could not run a full LaTeX compile because the read-only sandbox prevents TeX from writing its log.
+
+**3. External Consistency**
+- `the-closure-object` attribution is mostly verified: exact \(\zeta_K(s)\zeta_K(s-1)\), \(\zeta\) as one factor, and strong \(\zeta\)-bridge rejection are present at [the-closure-object lines 101-118](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-closure-object.tex:101>) and [177-183](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-closure-object.tex:177>). But “every Euler factor verified” [line 219](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:219>) should inherit the source caveat: theorem carries the identity; computation verifies implementation/local data.
+- `witness-from-triad` attribution is verified: prime side parameter-free, finite Gaussian positivity, GRH for one cuspidal \(L\), not classical RH. See [witness lines 27-34](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/witness-from-triad.tex:27>), [97-124](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/witness-from-triad.tex:97>), [138-152](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/witness-from-triad.tex:138>).
+- No “Paper XVIII / Paper XXIX” style local-paper citations occur in this file.
+
+**4. Tightness**
+- [Line 46](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:46>): replace with “The proven-equivalent routes below are re-expressions of this inequality; the remaining entries are templates or analogues.”
+- [Line 75](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:75>): replace “confirms it numerically” with “gives high-precision numerical support.”
+- [Line 134](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:134>): replace “principal published candidates” with “representative published routes, plus one control.”
+- [Lines 224-230](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:224>): add “finite, archimedean-dominated, truncated” before Gaussian tests.
+- [Lines 245-247](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:245>): delete “equivalently.”
+
+**5. Surface Issues**
+- No undefined macros found by static scan.
+- Bibliography keys used in the target appear defined.
+- `\S2` is semantically correct: §2 is “RH as one positivity.” Still brittle; labels would be better.
+- `\S\S3--\ref{sec:ledger}` is typographically awkward but likely compiles as intended.
+- Existing review files under `docs/reviews/` are zero-byte placeholders.
+
+**6. Top Three Fixes**
+1. Disambiguate classical RH positivity from the cuspidal witness at [lines 224-230](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:224>) and [245-247](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:245>). This is the publication blocker.
+2. Correct the equivalence/template count at [lines 49-51](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:49>) and qualify [line 46](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:46>).
+3. Remove the unsurveyed closing route list at [lines 242-243](</mnt/c/Users/nexus/OneDrive/Documents/My Projects/vfd-crystalisation-paper/release-bundles/vfd-closure-object/papers/the-positivity-wall.tex:242>) or replace it with the actual surveyed routes.

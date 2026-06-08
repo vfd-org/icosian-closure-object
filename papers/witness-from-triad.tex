@@ -15,6 +15,7 @@
 \newcommand{\zetaK}{\zeta_{K}}
 \newcommand{\Icos}{\mathcal{I}}
 \newcommand{\fq}{\mathfrak{q}}
+\newcommand{\Wtrunc}{W_{\le 150}}
 
 \title{The Prime Side of a Weil Witness from the Icosian Triad:\\ the Gap, Localized}
 \author{(VFD programme --- working draft)}
@@ -47,7 +48,8 @@ level $\mathfrak p_{31}=(5\varphi-2)$ (the object's \emph{cuspidal} face), with 
 and no zero-data; the archimedean term is the cuspidal $L$-function's completion (gamma
 factor and conductor), fixed by its functional equation. The implementation is validated
 on $\zeta$ (where the zeros are known) and, on a finite Gaussian test family, returns
-nonnegative $W(h)$ values. \textbf{We make no claim about the Riemann Hypothesis.}
+nonnegative values of the truncated computed functional $\Wtrunc(h)$ (prime side cut at
+$N(\fq)\le150$). \textbf{We make no claim about the Riemann Hypothesis.}
 Crucially: the
 witness lives on the \emph{cuspidal} face, so its positivity quantifier is GRH for that
 level-$31$ $L$-function, \emph{not} classical RH (classical $\zeta$ sits in the separate
@@ -63,31 +65,35 @@ separate is the whole point of this note.
 \paragraph{Eisenstein face (theta).} The theta series of $\Icos$ has
 $L(\Theta_\Icos,s)=\zetaK(s)\zetaK(s-1)$ exactly \cite{IcosianTriad}; via
 $\zetaK=\zeta\cdot L(s,\chi_5)$ the Riemann $\zeta$ appears as one of its four factors.
-This face \emph{contains} classical $\zeta$. Its parameters are $a_q=N(q)+1$, which
+This face \emph{contains} classical $\zeta$. Its parameters are $a_\fq=N(\fq)+1$, which
 violate the Ramanujan bound $|a_q|\le 2\sqrt{N(q)}$, so it is \emph{not admissible as the
 unitary cuspidal Satake input} used in the witness below. (It still has an explicit
 formula of its own; we make no use of one here.)
 
 \paragraph{Cuspidal face (Brandt).} The same order carries a self-adjoint Brandt/Hecke
 operator $B(\fq)$ at level $\mathfrak p_{31}=(5\varphi-2)$, whose eigenvalues $a_\fq$ are
-read directly from the icosian Brandt matrices---no point-counting, no fitting---and were
-independently checked out-of-sample to equal the corresponding point counts
-\cite{BrandtCuspidal}. The computed $a_\fq$ obey the Ramanujan bound in the tested range;
+read directly from the icosian Brandt matrices---no point-counting, no fitting. (In the
+external route-B computation \cite{BrandtCuspidal} these eigenvalues were further checked
+out-of-sample against point counts; that comparison lives in that bundle, not this one.)
+The computed $a_\fq$ obey the Ramanujan bound in the tested range;
 global Ramanujan for the associated form follows from its Hilbert-modular /
 Jacquet--Langlands identification, not from the finite Brandt matrices alone. This
 cuspidal face is where the witness lives.
 
 \section{The Weil witness, and that its prime side is built from the object}
 Fix the cuspidal level-$31$ $L$-function of the previous paragraph, with completed form
-$\Lambda(s)=L_\infty(s)L(s)$ ($L_\infty$ its gamma factor, conductor $775$). For a test
+$\Lambda(s)=N^{s/2}L_\infty(s)L(s)$ (gamma factor $L_\infty$ and conductor
+$N=31\cdot25=775$). For a test
 function $h$ even and of \emph{positive type} (the Fourier transform $\widehat h\ge0$),
 Weil's explicit formula reads, schematically,
 \[
    W(h)\;=\;\underbrace{\mathrm{ARCH}(h)}_{\text{from }L_\infty,\ \text{conductor}}
    \;-\;\underbrace{\mathrm{PRIME}(h)}_{\text{from the }a_\fq}
-   \;=\;\sum_{\gamma} h(\gamma),
+   \;=\;\sum_{\rho} \widehat h(\rho),
 \]
-the sum over the nontrivial zeros $\rho=\tfrac12+i\gamma$ of $L(s)$ \cite{Weil}. The
+the sum running over the nontrivial zeros $\rho$ of $L(s)$, \emph{with no assumption on
+$\mathrm{Re}\,\rho$} \cite{Weil}. Writing $\rho=\tfrac12+i\gamma$ with $\gamma\in\R$ is
+precisely GRH for this $L$, so we do not presuppose it. The
 witness $W$ is unconditional; Weil's criterion is the theorem
 \[
    \text{GRH for this cuspidal } L \;\Longleftrightarrow\; W(h)\ge 0
@@ -120,16 +126,18 @@ factor; it shares the framework, not the data.)
 \end{result}
 
 \begin{result}[positivity on the tested family]\label{res:pos}
-For the cuspidal level-$31$ $L$-function, $W(h)\ge 0$ on every test in the family
-($\sigma_h=3,4,5,6$; $W=+1.4047,+3.6961,+6.3931,+9.4125$).
+For the cuspidal level-$31$ $L$-function, the truncated computed functional
+$\Wtrunc(h)\ge 0$ (prime side cut at $N(\fq)\le150$, no tail bound) on every test in the
+family ($\sigma_h=3,4,5,6$; $\Wtrunc=+1.4047,+3.6961,+6.3931,+9.4125$). This is the
+implementation's value on a finite family, not the full Weil functional $W(h)$.
 \end{result}
 
 \begin{result}[control]\label{res:ctrl}
 Feeding the \emph{Eisenstein} bookkeeping $a_q=N(q)+1$ (the theta-face parameters) into
 the same residual yields $32$ Ramanujan violations: these coefficients are not the
 admissible cuspidal Satake input the residual requires. The control thus has teeth---the
-witness is not satisfied by arbitrary input---without implying the Eisenstein face is
-disqualified from all explicit-formula positivity.
+Eisenstein input is not admissible for this cuspidal Satake residual---without implying
+the Eisenstein face is disqualified from all explicit-formula positivity.
 \end{result}
 
 \section{The gap, named precisely}
@@ -164,7 +172,8 @@ the next required steps before any positivity statement carries weight.
 The icosian triad is exact at the object level, and it supplies---parameter-free, from
 its cuspidal Brandt face---the prime side of a Weil positivity witness $W(h)$ for a
 specific cuspidal level-$31$ $L$-function, with the archimedean side taken from that
-form's completion. The implementation is validated on $\zeta$ and gives $W(h)\ge0$ on
+form's completion. The implementation is validated on $\zeta$ and gives
+$\Wtrunc(h)\ge0$ (the truncated functional, $N(\fq)\le150$) on
 every test in a finite Gaussian family. The step not closed is the universal positivity
 quantifier, which is \textbf{GRH for that cuspidal $L$-function}; and even the verified
 positivity sits in an archimedean-dominated, finitely-truncated regime that is not a
@@ -182,9 +191,10 @@ positivity quantifier on the second.
 \bibitem{IcosianTriad} VFD programme, \emph{The Icosian Triad on $V_{600}$}
   (\texttt{icosian-triad-v600} release, v1.1): $L(\Theta_\Icos,s)=\zetaK(s)\zetaK(s-1)$
   exactly, verified in the maximal order; states it does not address RH/GRH.
-\bibitem{BrandtCuspidal} VFD programme, route-B icosian Brandt computation
-  (\texttt{icosian\_brandt\_cuspidal\_geometry/route\_b}, \texttt{weil\_wall.py},
-  \texttt{geometric\_aP.py}): geometric Hecke eigenvalues $a_\fq$ of the self-adjoint
+\bibitem{BrandtCuspidal} VFD programme, route-B icosian Brandt computation (external
+  \texttt{icosian\_brandt\_cuspidal\_geometry/route\_b} source; self-contained copies
+  \texttt{weil\_wall.py}, \texttt{geometric\_aP.py} ship in this bundle's
+  \texttt{repro/src}): geometric Hecke eigenvalues $a_\fq$ of the self-adjoint
   icosian Brandt operator at level $\mathfrak p_{31}$, cache $N(\fq)\le150$,
   out-of-sample checked against point counts; the witness run uses conductor $775$ and is
   archimedean-dominated.
