@@ -107,6 +107,12 @@ triad $(\mathcal{I}, C_\varphi, N_H, \sigma)$ are established in the companion
 $\zeta$-boundary, and localizes the positivity gap. The two reproducibility scripts
 here are self-contained copies so this bundle stands alone.
 
+The **flagship** [`icosian-rh-geometric`](https://github.com/vfd-org/icosian-rh-geometric)
+(v0.1.0-draft) consolidates the triad identity, this bundle's certified $\zeta$-boundary,
+and the witness into one continuous derivation ending at the geometric equivalent
+$Q_A\ge0\iff\mathrm{RH}(L)$ (GRH for one cuspidal $L$, not classical RH; positivity is the
+open frontier).
+
 ## Governing rule
 
 Geometry-first; the physics is the frame, not the proof. The Riemann $\zeta$ enters
